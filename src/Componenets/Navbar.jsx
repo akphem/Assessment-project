@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/images/logo (2).png";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +21,16 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
+      className={`lg:fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between py-4">
-        <Link to="/" className="flex flex-col items-center rounded-sm">
-          <h1 className="font-bold text-purple-950 text-3xl text-center shadow-white">
+        <Link to="/" className="flex flex-col items-center lg:items-start">
+          <h1 className="font-bold text-purple-950 text-xl lg:text-3xl text-center lg:text-left">
             Life's Success Strategies
           </h1>
-          <span className="text-grey-800 shadow-sm text-sm mt-1 text-center">
+          <span className="text-gray-800 text-xs lg:text-sm mt-1 text-center lg:text-left">
             .. But By His Mercies
           </span>
         </Link>
@@ -80,7 +79,7 @@ export const Navbar = () => {
 
         <Link
           to="/assessmentpage"
-          className="mt-4 lg:mt-0 w-full lg:w-auto text-center lg:text-left bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition duration-300"
+          className="mt-4 lg:mt-0 w-40 sm:w-auto text-center lg:text-left bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-300"
         >
           Start Your Test Now
         </Link>
