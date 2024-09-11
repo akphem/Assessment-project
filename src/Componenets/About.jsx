@@ -50,6 +50,10 @@ export const About = () => {
                 organizations, and communities. They are also essential for
                 maintaining a healthy mental, emotional, physical, and
                 psychological lifestyle."
+                <h1 className="text-2xl font-bold text-purple-950">Author’s recommendation:</h1>
+                The author recommends regularly taking emotional intelligence
+                assessments to enhance and develop your emotional intelligence
+                skills.
               </blockquote>
             </div>
           </div>
