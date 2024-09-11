@@ -35,9 +35,6 @@ export const About = () => {
               valuable insights into your emotional landscape.
             </p>
             <div className="mt-12">
-              <h3 className="text-2xl font-bold text-purple-700 mb-4">
-                The Author's View on Personality Tests
-              </h3>
               <blockquote className="text-xl italic text-gray-700 border-l-4 border-purple-500 pl-4 py-2">
                 "The author, having completed two master's research degrees on
                 emotional intelligence in Nigeria and England receptively, is
