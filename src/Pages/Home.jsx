@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from '../Componenets/Hero';
 import About from '../Componenets/About';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import pointing from "../assets/images/pointing-removebg-preview.png";
+
 
 export const Home = () => {
   return (
@@ -37,9 +39,9 @@ export const Home = () => {
             </div>
             <div className="flex justify-center lg:justify-end">
               <img
-                src="https://via.placeholder.com/500x500"
+                src={pointing}
                 alt="Emotional Intelligence Tools"
-                className="w-full max-w-lg rounded-2xl shadow-2xl"
+                className="w-full max-w-lg rounded-2xl"
               />
             </div>
           </div>
@@ -54,7 +56,7 @@ export const Home = () => {
           
           <div className="space-y-8 text-lg text-gray-700">
             <p>
-              Our assessment consists of 30 carefully crafted questions, designed to evaluate your emotional intelligence in various scenarios. It takes approximately 10 minutes to complete and covers crucial aspects such as emotional control and interpersonal reactions.
+              Our assessment consists of 20 carefully crafted questions, designed to evaluate your emotional intelligence in various scenarios. It takes approximately 5 minutes to complete and covers crucial aspects such as emotional control and interpersonal reactions.
             </p>
             
             <div>

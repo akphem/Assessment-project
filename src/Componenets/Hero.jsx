@@ -1,33 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-purple-500 to-pink-500 text-white py-20 lg:py-32">
+    <section className="relative bg-gradient-to-r from-purple-500 to-pink-500 text-white pt-24 pb-20 lg:pt-32 lg:pb-32">
       {/* Floating Elements */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-purple-400 rounded-full filter blur-3xl opacity-30"></div>
       <div className="absolute top-20 right-0 w-60 h-60 bg-pink-400 rounded-full filter blur-2xl opacity-40"></div>
       <div className="absolute bottom-10 left-1/3 w-40 h-40 bg-blue-300 rounded-full filter blur-2xl opacity-50"></div>
 
       <div className="container mx-auto px-6 text-center">
-        {/* Main Heading */}
-        <h1 className="text-5xl lg:text-6xl font-bold mb-4">
+        <h1 className="text-4xl lg:text-6xl font-bold mb-4">
           Discover Your True Potential
         </h1>
-        
-        {/* Subtitle */}
+
         <p className="text-lg lg:text-xl text-gray-100 max-w-2xl mx-auto mb-8">
-          Take our professional personality test to uncover the strengths and areas of growth that will drive your personal and career success.
+          Take our free Emotional Intelligence test to discover your strengths
+          and improve on your areas of weakness. Build on what you do best and
+          enhance where you need it most.
         </p>
-        
-        {/* Call to Action */}
-       
+
+        <Link
+          to="/assessmentpage"
+          className="bg-white text-purple-600 hover:bg-purple-100 px-8 py-3 rounded-full font-semibold text-lg inline-block transition duration-300"
+        >
+          Start Your Assessment
+        </Link>
       </div>
 
-      {/* Decorative Waves at the Bottom */}
       <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
         <svg
-          className="relative block w-full h-20 lg:h-40"
+          className="relative block w-full h-16 lg:h-24"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >

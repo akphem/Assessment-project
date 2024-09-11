@@ -215,6 +215,9 @@ const Testpage = () => {
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isFinished, setIsFinished] = useState(false);
+  const [previousAnswers, setPreviousAnswers] = useState([]); // Store previous answers
+
+
 
   // Emotional categories based on score ranges
   const categories = [
@@ -247,14 +250,14 @@ const Testpage = () => {
     );
   };
 
-  // Handle when a user selects an option
   const handleOptionClick = (points) => {
     setSelectedOption(points);
   };
 
-  // Handle when the user clicks "Next"
   const handleNextClick = () => {
     if (selectedOption !== null) {
+      setPreviousAnswers([...previousAnswers, selectedOption]);
+
       setScore(score + selectedOption);
       setSelectedOption(null);
 
@@ -266,7 +269,18 @@ const Testpage = () => {
     }
   };
 
-  // Optional: Reset the test if you want to start again
+  const handlePreviousClick = () => {
+    if (currentQuestion > 0) {
+      const prevSelectedOption =
+        previousAnswers[previousAnswers.length - 1];
+      setScore(score - prevSelectedOption);
+      setSelectedOption(prevSelectedOption);
+
+      setPreviousAnswers(previousAnswers.slice(0, -1));
+      setCurrentQuestion(currentQuestion - 1);
+    }
+  };
+
   const resetTest = () => {
     setCurrentQuestion(0);
     setScore(0);
@@ -303,28 +317,43 @@ const Testpage = () => {
               ))}
             </ul>
 
-            <button
-              onClick={handleNextClick}
-              className={`w-full py-3 text-lg font-semibold rounded-lg transition-colors duration-300 ${
-                selectedOption === null ? "bg-gray-400 cursor-not-allowed" : "bg-purple-600 hover:bg-purple-700"
-              }`}
-              disabled={selectedOption === null}
-            >
-              {currentQuestion < questions.length - 1 ? "Next" : "Finish"}
-            </button>
+            {/* Wrapping buttons in a flex container for better alignment */}
+            <div className="flex justify-between">
+              <button
+                onClick={handlePreviousClick}
+                className={`bg-gray-500 text-white font-bold py-2 px-4 rounded ${
+                  currentQuestion === 0 ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+                disabled={currentQuestion === 0}
+              >
+                Previous
+              </button>
+
+              <button
+                onClick={handleNextClick}
+                className={`bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded ${
+                  selectedOption === null
+                    ? "opacity-50 cursor-not-allowed"
+                    : ""
+                }`}
+                disabled={selectedOption === null}
+              >
+                {currentQuestion < questions.length - 1 ? "Next" : "Finish"}
+              </button>
+            </div>
           </div>
         ) : (
           <div className="result-container text-center">
             <h2 className="text-3xl font-bold mb-6">Congratulations!</h2>
             <p className="text-xl mb-4">
-              You have successfully completed the Emotional Intelligence Assessment.
+              You have successfully completed the Emotional Intelligence
+              Assessment.
             </p>
             <p className="text-lg mb-6">
-              Based on your score, you belong to the category: <strong className="text-purple-600">{category.name}</strong>
+              Based on your score, you belong to the category:{" "}
+              <strong className="text-purple-600">{category.name}</strong>
             </p>
-            <p className="text-md mb-6">
-              {category.description}
-            </p>
+            <p className="text-md mb-6">{category.description}</p>
             <div className="flex justify-center space-x-4">
               <button
                 onClick={resetTest}
