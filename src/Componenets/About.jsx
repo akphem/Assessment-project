@@ -50,10 +50,23 @@ export const About = () => {
                 organizations, and communities. They are also essential for
                 maintaining a healthy mental, emotional, physical, and
                 psychological lifestyle."
-                <h1 className="text-2xl font-bold text-purple-950">Author’s recommendation:</h1>
-                The author recommends regularly taking emotional intelligence
-                assessments to enhance and develop your emotional intelligence
-                skills.
+                <h1 className="text-2xl font-bold text-purple-950">
+                  Author’s recommendation:
+                </h1>
+                Regularly taking an emotional intelligence assessment test is
+                indeed a useful practice for enhancing and developing emotional
+                intelligence (EI) skills. Such assessments help individuals
+                become more self-aware, identify emotional strengths and
+                weaknesses, and track progress over time. Sincerity in choosing
+                the most honest answers to the questions in these tests is key
+                to accurately determining one's emotional intelligence skills
+                and level. The author, therefore, recommends sincerity in
+                choosing the most honest answers. By reflecting on test results,
+                people can target areas for improvement, such as empathy,
+                emotional regulation, social skills, and self-awareness. These
+                skills are critical for building healthier relationships,
+                improving communication, and managing stress in both personal
+                and professional settings.
               </blockquote>
             </div>
           </div>
