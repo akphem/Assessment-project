@@ -8,7 +8,7 @@ const Testpage = () => {
     {
       question: "How do you handle criticism ?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -18,7 +18,7 @@ const Testpage = () => {
     {
       question: "Can you stay calm in tough situations?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -28,7 +28,7 @@ const Testpage = () => {
     {
       question: "Do you stay calm when others disagree with you?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -38,7 +38,7 @@ const Testpage = () => {
     {
       question: "Do you often think about your emotions?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -48,7 +48,7 @@ const Testpage = () => {
     {
       question: "Can you understand how others feel easily?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -58,7 +58,7 @@ const Testpage = () => {
     {
       question: " Do you stay calm when someone is mad at you?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -68,7 +68,7 @@ const Testpage = () => {
     {
       question: "Can you stay motivated during hard tasks?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -78,7 +78,7 @@ const Testpage = () => {
     {
       question: "Do you help others manage their emotions?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -88,7 +88,7 @@ const Testpage = () => {
     {
       question: "Are you good at making new friends?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -98,7 +98,7 @@ const Testpage = () => {
     {
       question: "Do you handle stress well?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -108,7 +108,7 @@ const Testpage = () => {
     {
       question: "Do you resolve conflicts easily in a team?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -118,7 +118,7 @@ const Testpage = () => {
     {
       question: "Are you good at communicating with others?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -128,7 +128,7 @@ const Testpage = () => {
     {
       question: "Can you balance your needs with others' needs?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -138,7 +138,7 @@ const Testpage = () => {
     {
       question: "Do you stay calm when overwhelmed?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -148,7 +148,7 @@ const Testpage = () => {
     {
       question: "Do you celebrate successes well?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -158,7 +158,7 @@ const Testpage = () => {
     {
       question: " Do you handle feedback well?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -168,7 +168,7 @@ const Testpage = () => {
     {
       question: " Can you stay positive in tough times?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -178,7 +178,7 @@ const Testpage = () => {
     {
       question: " Do you keep focused on your goals?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -188,7 +188,7 @@ const Testpage = () => {
     {
       question: "Do you help others reach their goals?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
@@ -200,7 +200,7 @@ const Testpage = () => {
     {
       question: "Do your actions match your values?",
       options: [
-        { text: "Mostly likely", points: 5 },
+        { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
         { text: "Unlikely", points: 2 },
