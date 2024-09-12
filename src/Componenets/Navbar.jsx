@@ -31,7 +31,7 @@ export const Navbar = () => {
             Life's Success Strategies
           </h1>
           <span className="text-gray-800 text-xs lg:text-sm mt-1 text-center lg:text-left">
-            .. But By His Mercies
+            ... but by His mercies
           </span>
         </Link>
 
