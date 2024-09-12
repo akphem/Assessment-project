@@ -23,7 +23,7 @@ export const About = () => {
               Meet the Author
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              The free assessment is designed to help participants identify
+              The free assessment test is designed to help participants identify
               their emotional states and their relative positions. It addresses
               those who are overwhelmed by emotions and aware of feelings, but
               struggle to differentiate, understand, or appropriately respond to

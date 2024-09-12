@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FaArrowLeft} from "react-icons/fa"
+import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 
 const Testpage = () => {
   // Define all 20 questions
@@ -9,238 +8,239 @@ const Testpage = () => {
     {
       question: "How do you handle criticism ?",
       options: [
-        { text: "Mostly like", points: 5 },
-        { text: "Like", points: 4 },
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
-        { text: "Unlike", points: 2 },
-        { text: "Most unlike", points: 1 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
       ],
     },
     {
       question: "Can you stay calm in tough situations?",
       options: [
-        { text: "Mostly like", points: 5 },
-        { text: "Like", points: 4 },
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
-        { text: "Unlike", points: 2 },
-        { text: "Most unlike", points: 1 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
       ],
     },
     {
       question: "Do you stay calm when others disagree with you?",
       options: [
-        { text: "Mostly like", points: 5 },
-        { text: "Like", points: 4 },
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
-        { text: "Unlike", points: 2 },
-        { text: "Most unlike", points: 1 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
       ],
     },
     {
       question: "Do you often think about your emotions?",
       options: [
-        { text: "Mostly like", points: 5 },
-        { text: "Like", points: 4 },
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
-        { text: "Unlike", points: 2 },
-        { text: "Most unlike", points: 1 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
       ],
     },
     {
-        question: "Can you understand how others feel easily?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: " Do you stay calm when someone is mad at you?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Can you stay motivated during hard tasks?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Do you help others manage their emotions?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Are you good at making new friends?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Do you handle stress well?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Do you resolve conflicts easily in a team?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Are you good at communicating with others?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Can you balance your needs with others' needs?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Do you stay calm when overwhelmed?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Do you celebrate successes well?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: " Do you handle feedback well?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: " Can you stay positive in tough times?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: " Do you keep focused on your goals?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      {
-        question: "Do you help others reach their goals?",
-        options: [
-          { text: "Mostly like", points: 5 },
-          { text: "Like", points: 4 },
-          { text: "Sometimes", points: 3 },
-          { text: "Unlike", points: 2 },
-          { text: "Most unlike", points: 1 },
-        ],
-      },
-      
+      question: "Can you understand how others feel easily?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: " Do you stay calm when someone is mad at you?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Can you stay motivated during hard tasks?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Do you help others manage their emotions?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Are you good at making new friends?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Do you handle stress well?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Do you resolve conflicts easily in a team?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Are you good at communicating with others?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Can you balance your needs with others' needs?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Do you stay calm when overwhelmed?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Do you celebrate successes well?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: " Do you handle feedback well?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: " Can you stay positive in tough times?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: " Do you keep focused on your goals?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+    {
+      question: "Do you help others reach their goals?",
+      options: [
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
+        { text: "Sometimes", points: 3 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
+      ],
+    },
+
     // Add the remaining questions here
     {
       question: "Do your actions match your values?",
       options: [
-        { text: "Mostly like", points: 5 },
-        { text: "Like", points: 4 },
+        { text: "Mostly likely", points: 5 },
+        { text: "Likely", points: 4 },
         { text: "Sometimes", points: 3 },
-        { text: "Unlike", points: 2 },
-        { text: "Most unlike", points: 1 },
+        { text: "Unlikely", points: 2 },
+        { text: "Most unlikely", points: 1 },
       ],
     },
   ];
 
- 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isFinished, setIsFinished] = useState(false);
   const [previousAnswers, setPreviousAnswers] = useState([]); // Store previous answers
 
-
-
   // Emotional categories based on score ranges
   const categories = [
     {
       name: "Highly Emotionally Intelligent",
       range: [90, 100],
-      description: "You have a high level of emotional intelligence. You excel in understanding and managing your own emotions as well as recognizing and influencing the emotions of others."
+      description:
+        "You have a high level of emotional intelligence. You excel in understanding and managing your own emotions as well as recognizing and influencing the emotions of others.",
     },
     {
       name: "Moderately Emotionally Intelligent",
       range: [70, 89],
-      description: "You have a moderate level of emotional intelligence. You are generally good at handling emotions and understanding others, but there is room for improvement."
+      description:
+        "You have a moderate level of emotional intelligence. You are generally good at handling emotions and understanding others, but there is room for improvement.",
     },
     {
       name: "Developing Emotional Intelligence",
       range: [50, 69],
-      description: "You are in the developing stage of emotional intelligence. You may face challenges in managing and understanding emotions, but with practice, you can improve."
+      description:
+        "You are in the developing stage of emotional intelligence. You may face challenges in managing and understanding emotions, but with practice, you can improve.",
     },
     {
       name: "Emerging Emotional Intelligence",
       range: [0, 49],
-      description: "You are at the early stage of developing emotional intelligence. You may find it challenging to manage and understand emotions, and would benefit from further growth and learning."
-    }
+      description:
+        "You are at the early stage of developing emotional intelligence. You may find it challenging to manage and understand emotions, and would benefit from further growth and learning.",
+    },
   ];
 
   // Determine the emotional category based on the score
@@ -271,8 +271,7 @@ const Testpage = () => {
 
   const handlePreviousClick = () => {
     if (currentQuestion > 0) {
-      const prevSelectedOption =
-        previousAnswers[previousAnswers.length - 1];
+      const prevSelectedOption = previousAnswers[previousAnswers.length - 1];
       setScore(score - prevSelectedOption);
       setSelectedOption(prevSelectedOption);
 
@@ -332,9 +331,7 @@ const Testpage = () => {
               <button
                 onClick={handleNextClick}
                 className={`bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded ${
-                  selectedOption === null
-                    ? "opacity-50 cursor-not-allowed"
-                    : ""
+                  selectedOption === null ? "opacity-50 cursor-not-allowed" : ""
                 }`}
                 disabled={selectedOption === null}
               >
