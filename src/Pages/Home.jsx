@@ -62,11 +62,11 @@ export const Home = () => {
             <div>
               <p className="font-semibold mb-4">For each statement, you'll indicate how often it applies to you:</p>
               <ul className="grid grid-cols-2 gap-4 list-disc list-inside pl-4">
-                <li>Rarely like me</li>
-                <li>Occasionally like me</li>
-                <li>Sometimes like me</li>
-                <li>Often like me</li>
-                <li>Always like me</li>
+                <li>Most likely</li>
+                <li>Likely</li>
+                <li>Sometimes</li>
+                <li>Unlikely</li>
+                <li>Most unlikely</li>
               </ul>
             </div>
 

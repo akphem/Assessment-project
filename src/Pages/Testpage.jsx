@@ -6,7 +6,7 @@ const Testpage = () => {
   // Define all 20 questions
   const questions = [
     {
-      question: "How do you handle criticism ?",
+      question: "How well do you handle criticisms ?",
       options: [
         { text: "Most likely", points: 5 },
         { text: "Likely", points: 4 },
