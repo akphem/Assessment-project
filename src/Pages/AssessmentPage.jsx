@@ -100,7 +100,7 @@ const AssessmentPage = () => {
             to="/testpage"
             className="px-6 py-3 bg-blue-700 text-white font-medium rounded-lg shadow-lg transition-all duration-300 hover:bg-blue-800 hover:shadow-2xl focus:outline-none focus:ring focus:ring-blue-400"
           >
-            Start the Assessment
+            Start Assessment
           </Link>
         </div>
       </div>
