@@ -59,7 +59,7 @@ export const Home = () => {
               Our assessment consists of 20 carefully crafted questions, designed to evaluate your emotional intelligence in various scenarios. It takes approximately 5 minutes to complete and covers crucial aspects such as emotional control and interpersonal reactions.
             </p>
             
-            <div>
+            {/* <div>
               <p className="font-semibold mb-4">For each statement, you'll indicate how often it applies to you:</p>
               <ul className="grid grid-cols-2 gap-4 list-disc list-inside pl-4">
                 <li>Most likely</li>
@@ -68,13 +68,13 @@ export const Home = () => {
                 <li>Unlikely</li>
                 <li>Most unlikely</li>
               </ul>
-            </div>
+            </div> */}
 
             <p>
               Your responses are completely confidential. We use your answers to generate a personalized, in-depth report highlighting your strengths and areas for improvement in understanding and managing emotions, particularly in financial contexts. 
             </p>
             <p className="font-semibold">
-              Remember to download your report upon completion, as it won't be stored online for privacy reasons.
+              Remember to download your report upon completion, as it will not be stored online for privacy reasons.
             </p>
           </div>
 
