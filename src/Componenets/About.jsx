@@ -32,25 +32,37 @@ export const About = () => {
             </p>
             <p className="text-xl text-gray-700 leading-relaxed animate-fadeInUp delay-100">
               Based on years of research on emotional intelligence by Olugbenga
-              Akanle, this user-friendly assessment tool offers valuable insights into your emotional landscape.
+              Akanle, this user-friendly assessment tool offers valuable
+              insights into your emotional landscape.
             </p>
 
             {/* Author's Quote */}
             <div className="mt-12">
               <blockquote className="text-xl italic text-gray-700 border-l-4 border-purple-500 pl-4 py-2 animate-fadeInUp delay-200">
                 "The author, having completed two master's research degrees on
-                emotional intelligence in Nigeria and England respectively, is
-                now pursuing a PhD on the intersection between emotional and spiritual intelligences in Paris, France..."
+                emotional intelligence in Nigeria and England receptively, is
+                now pursuing a PhD on the cutting-edge intersection between
+                emotional and spiritual intelligences in Paris, France. As a
+                certified Complementary Therapist and Accredited Association
+                (CTAA) member, the author brings a unique perspective to this
+                research. This study seeks to illuminate how these
+                often-overlooked facets of human experience influence
+                decision-making, interpersonal dynamics, and organizational
+                outcomes. Emotional and spiritual intelligences are crucial in
+                everyday life, shaping interactions in relationships, families,
+                organizations, and communities. They are also essential for
+                maintaining a healthy mental, emotional, physical, and
+                psychological lifestyle."
               </blockquote>
               <h1 className="text-2xl font-bold text-purple-950 mt-4 animate-fadeInUp delay-300">
                 Author’s recommendation:
               </h1>
               <p className="text-lg text-gray-700 mt-2 animate-fadeInUp delay-400">
                 Regularly taking an emotional intelligence assessment test is
-                indeed a useful practice for enhancing emotional intelligence (EI) skills.
-                The author recommends sincerity in answering the test for
-                accurate results, which will help identify strengths and areas
-                for improvement in personal and professional settings.
+                indeed a useful practice for enhancing emotional intelligence
+                (EI) skills. The author recommends sincerity in answering the
+                test for accurate results, which will help identify strengths
+                and areas for improvement in personal and professional settings.
               </p>
             </div>
           </div>
