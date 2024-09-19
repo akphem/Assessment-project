@@ -33,7 +33,8 @@ const AssessmentPage = () => {
             <h3 className="font-semibold text-lg">Data Collection and Use</h3>
             <p>
               <strong>Collection:</strong> We collect your answers during this
-              session. <strong>Use:</strong> Your responses are used only to
+              session.</p>
+              <p><strong>Use:</strong> Your responses are used only to
               give you feedback. No one else, including researchers or third
               parties, will have access to your results.
             </p>
@@ -44,7 +45,8 @@ const AssessmentPage = () => {
             <p>
               <strong>Storage:</strong> No data will be saved after you finish
               the assessment. Your answers will be deleted automatically. 
-              <strong>Confidentiality:</strong> Your privacy is fully protected, as we don’t keep any data.
+              </p>
+              <p><strong>Confidentiality:</strong> Your privacy is fully protected, as we do not keep any data.
             </p>
           </li>
 

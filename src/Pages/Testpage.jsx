@@ -62,7 +62,7 @@ const Testpage = () => {
         { text: "Easily", points: 4 },
         { text: "Somewhat easily", points: 3 },
         { text: "With difficulty", points: 2 },
-        { text: "Very difficult", points: 1 },
+        { text: "Very difficulty", points: 1 },
       ],
     },
     {
