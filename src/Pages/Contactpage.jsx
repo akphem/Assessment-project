@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa"; // Icons for WhatsApp and Email
 
 const Contactpage = () => {

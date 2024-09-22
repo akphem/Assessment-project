@@ -1,4 +1,3 @@
-import React from "react";
 import pastor from "../assets/images/pastor.jpeg";
 
 export const About = () => {
@@ -39,7 +38,7 @@ export const About = () => {
             {/* Author's Quote */}
             <div className="mt-12">
               <blockquote className="text-xl italic text-gray-700 border-l-4 border-purple-500 pl-4 py-2 animate-fadeInUp delay-200">
-                "The author, having completed two master's research degrees on
+              &quot;The author, having completed two master&apos;s research degrees on
                 emotional intelligence in Nigeria and England receptively, is
                 now pursuing a PhD on the cutting-edge intersection between
                 emotional and spiritual intelligences in Paris, France. As a
@@ -52,10 +51,10 @@ export const About = () => {
                 everyday life, shaping interactions in relationships, families,
                 organizations, and communities. They are also essential for
                 maintaining a healthy mental, emotional, physical, and
-                psychological lifestyle."
+                psychological lifestyle.&quot;
               </blockquote>
               <h1 className="text-2xl font-bold text-purple-950 mt-4 animate-fadeInUp delay-300">
-                Author’s recommendation:
+                Author&apos;s recommendation:
               </h1>
               <p className="text-lg text-gray-700 mt-2 animate-fadeInUp delay-400">
                 Regularly taking an emotional intelligence assessment test is

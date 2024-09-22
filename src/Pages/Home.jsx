@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../Componenets/Hero';
 import About from '../Componenets/About';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom

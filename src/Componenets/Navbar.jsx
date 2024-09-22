@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -29,7 +29,7 @@ export const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex flex-col items-center lg:items-start">
           <h1 className="font-bold text-purple-950 text-xl lg:text-3xl text-center lg:text-left animate-slideDown">
-            Life's Success Strategies
+            Life&apos;s Success Strategies
           </h1>
           <span className="text-gray-800 text-xs lg:text-sm mt-1 text-center lg:text-left">
             ... but for His mercies

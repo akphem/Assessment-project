@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const AssessmentPage = () => {
@@ -74,7 +73,7 @@ const AssessmentPage = () => {
               <Link to="/contactpage" className="text-blue-600 hover:text-blue-800 underline">
                 contact us
               </Link>.
-              By clicking "Start Assessment," you confirm that you’ve read and
+              By clicking &quot;Start Assessment,&quot; you confirm that you&apos;ve read and
               agree to the Terms of Use and Data Privacy Agreement.
             </p>
           </li>
@@ -91,8 +90,8 @@ const AssessmentPage = () => {
         <p className="text-base text-gray-700 mb-6">
           You will be presented with a series of questions, each with 5 answer
           options. Read each question carefully and select the option that best
-          represents your response. You can use the "Next" button to navigate
-          through the questions and the "Previous" button to review or change
+          represents your response. You can use the &quot;Next&quot; button to navigate
+          through the questions and the &quot;Previous&quot; button to review or change
           your answers.
         </p>
 

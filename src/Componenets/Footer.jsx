@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
           
           {/* Logo and About Section */}
           <div className="text-center lg:text-left">
-            <h2 className="text-4xl font-semibold mb-4">Life's Success Strategy Assessment Site</h2>
+            <h2 className="text-4xl font-semibold mb-4">Life&apos;s Success Strategy Assessment Site</h2>
             <p className="text-gray-300 text-lg">
               We offer personality assessment tests to help you understand yourself better and find your path to success. Your results are confidential and personalized to guide you.
             </p>
