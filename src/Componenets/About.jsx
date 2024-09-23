@@ -39,7 +39,7 @@ export const About = () => {
             <div className="mt-12">
               <blockquote className="text-xl italic text-gray-700 border-l-4 border-purple-500 pl-4 py-2 animate-fadeInUp delay-200">
               &quot;The author, having completed two master&apos;s research degrees on
-                emotional intelligence in Nigeria and England receptively, is
+                emotional intelligence in Nigeria and England respectively, is
                 now pursuing a PhD on the cutting-edge intersection between
                 emotional and spiritual intelligences in Paris, France. As a
                 certified Complementary Therapist and Accredited Association
