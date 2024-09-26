@@ -39,16 +39,16 @@ export const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-gray-700 hover:text-gray-900 focus:outline-none"
+          className="lg:hidden text-gray-700 hover:text-gray-900 focus:outline-none ml-auto"
         >
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 
-        {/* Navbar Links */}
+        {/* Navbar Links - Dropdown for Mobile */}
         <nav
           className={`${
-            isOpen ? "flex" : "hidden"
-          } lg:flex flex-col lg:flex-row w-full lg:w-auto mt-4 lg:mt-0 space-y-2 lg:space-y-0 lg:space-x-10 lg:items-center`}
+            isOpen ? "block" : "hidden"
+          } lg:flex flex-col lg:flex-row w-full lg:w-auto mt-4 lg:mt-0 lg:space-y-0 space-y-4 lg:space-x-12 lg:items-center transition-all duration-500 ease-in-out bg-white lg:bg-transparent absolute lg:static top-16 left-0 right-0 p-4 lg:p-0 lg:opacity-100`}
         >
           <Link
             to="/"
@@ -83,7 +83,7 @@ export const Navbar = () => {
         {/* Call to Action Button */}
         <Link
           to="/assessmentpage"
-          className="mt-4 lg:mt-0 w-40 sm:w-auto text-center lg:text-left bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-300 animate-slideUp"
+          className="hidden lg:block mt-4 lg:mt-0 w-40 sm:w-auto text-center lg:text-left bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-300 animate-slideUp"
         >
           Start Your Test Now
         </Link>

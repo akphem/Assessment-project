@@ -1,6 +1,33 @@
-import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaAngleDoubleUp } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    const scrollStep = -window.scrollY / (500 / 15); // Adjust the divisor for speed
+    const animateScroll = () => {
+      if (window.scrollY > 0) {
+        window.scrollBy(0, scrollStep);
+        requestAnimationFrame(animateScroll);
+      }
+    };
+    animateScroll();
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   return (
     <footer className="bg-gradient-to-r from-purple-700 via-indigo-700 to-blue-800 text-white py-12">
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -36,10 +63,6 @@ const Footer = () => {
           </div>
 
           {/* Social Media Section */}
-
-
-
-          {/* Social Media Section */}
           <div className="text-center lg:text-left">
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center lg:justify-start space-x-6">
@@ -63,6 +86,18 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+      {/* Scroll to Top Button */}
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-10 right-10 bg-gradient-to-r from-purple-600 to-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-gradient-to-r from-blue-500 to-purple-600 transition duration-300 transform hover:scale-105"
+          aria-label="Scroll to top"
+          style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
+        >
+          <span className="text-3xl"><FaAngleDoubleUp/></span> {/* Increased arrow size */}
+        </button>
+      )}
     </footer>
   );
 };
